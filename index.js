@@ -46,6 +46,7 @@ function writeToFile(fileName, data) {
     .then((response) => {
       // generating new readme in separate folder so it doesn't overwrite the application's readme
       writeToFile("./assets/index.html", response)
+      writeToFile("./assets/style.css", response)
   });
 }
 // call function that initiates application
